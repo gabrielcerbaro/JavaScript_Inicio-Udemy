@@ -1,0 +1,1 @@
+alert('Você entrou numa página com vírus')

@@ -1,0 +1,3 @@
+// Há palavras reservadas que não podem ser usadas para criar uma variável. 
+// Todas eas são reservadas, pois são de alum outro tipo de operação dentro do código. 
+// Como if, true, flase e etc...
