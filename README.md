@@ -1,2 +1,2 @@
 # JavaScript-Inicio
-O inicio dos meus estudos em JavaScript
+O inicio dos meus estudos em JavaScript.
