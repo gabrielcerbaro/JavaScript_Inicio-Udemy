@@ -4,9 +4,9 @@
 let gabriel = "Gabriel fora da função";
 
 function nomeGabriel() {
-    let gabriel = "Gabriel dentro da funçõa";
+    let gabriel = "Gabriel dentro da função";
     console.log(gabriel);
 }
 
-nomeGabriel(); // Gabriel dentro da funçõa
+nomeGabriel(); // Gabriel dentro da função
 console.log(gabriel); // Gabriel fora da função

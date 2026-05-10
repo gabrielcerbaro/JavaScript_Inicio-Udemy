@@ -1,19 +1,22 @@
-function imprimirNoConsole(){
-    console.log("Olá,mundo!");
+function imprimirNoConsole() {
+    console.log("Olá mundo!")
 }
 
 imprimirNoConsole();
 
-function imprimirUmNumero(num){
-    console.log("O número é: " + num);
+function imprimirUmNumero(num) {
+    console.log("O número é: " + num)
 }
 
-imprimirUmNumero(5);
-imprimirUmNumero(10);
+imprimirUmNumero(3);
+imprimirUmNumero(4);
+imprimirUmNumero(67);
+imprimirUmNumero(69);
 
-const numeroAleatorio = function(){
-    console.log(Math.random());
+const numeroAleatorio = function() {
+    console.log(Math.random())
 }
 
+numeroAleatorio();
 numeroAleatorio();
 numeroAleatorio();
