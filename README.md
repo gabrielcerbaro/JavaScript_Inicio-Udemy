@@ -22,7 +22,7 @@
     </td>
     <td align="left" style="padding-left: 25px;">
       <h3>Olá, eu sou <strong>Gabriel Cerbaro</strong> 👋</h3>
-      <p>📈 Supervisor de Logística | Estudante de Contabilidade | Futuro Desenvolvedor Full-Stack</p>
+      <p>📈 Desenvolvedor em formação | ADS | Full Stack em construção | JavaScript • Node.js • React | Técnico em Informática</p>
       <p>
         🌐 <a href="https://www.linkedin.com/in/gabriel-cerbaro-4703b4239/" target="_blank">
           <img src="https://img.shields.io/badge/LinkedIn-Conectar-blue?logo=linkedin" />
