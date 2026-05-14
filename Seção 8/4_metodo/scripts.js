@@ -1,28 +1,17 @@
-// Este script demonstra o uso de métodos em strings.
-// Métodos são funções associadas a objetos que realizam ações ou retornam valores.
-// Estamos chamando métodos para alterar o caso das letras.
+// Este script mostra a diferenca entre chamar metodos e acessar propriedades.
+// Metodos sao funcoes ligadas a um valor ou objeto, usadas para executar alguma acao.
 
-// Declarando uma string
 let nome = "nike";
-// Strings têm vários métodos built-in.
 
-console.log(nome.toUpperCase()); // Método toUpperCase() converte para maiúsculas
-// 'toUpperCase' é um método que retorna uma nova string em maiúsculas.
-// Dica: Use para normalizar entradas, como emails ou nomes.
-// Princípio: Métodos não alteram o objeto original (imutabilidade), retornam novos valores.
+// toUpperCase() retorna uma nova string com todas as letras maiusculas.
+console.log(nome.toUpperCase());
 
-let nome2 = nome.toUpperCase(); // Atribuindo o resultado a uma nova variável
-// Dica: Sempre atribua o retorno de métodos a variáveis para usar o resultado.
+// Guarda a versao em maiusculas dentro de outra variavel.
+let nome2 = nome.toUpperCase();
 
-console.log(nome2.toLowerCase()); // Método toLowerCase() converte para minúsculas
-// 'toLowerCase' faz o oposto.
-// Dica: Combine com toUpperCase para alternar casos.
+// toLowerCase() retorna uma nova string com todas as letras minusculas.
+console.log(nome2.toLowerCase());
 
-console.log(typeof nome2.toLowerCase); // Verificando o tipo do método
-// 'typeof' mostra que é uma função.
-// Dica: Métodos são funções, então podem ser chamadas com ().
-
-// Diferença entre método e propriedade:
-// - Propriedade: armazena um valor (ex: length).
-// - Método: executa uma ação (ex: toUpperCase()).
-// Princípio: Métodos encapsulam comportamento, propriedades encapsulam estado.
+// Sem parenteses, estamos olhando para o metodo em si.
+// O typeof mostra que toLowerCase e uma funcao.
+console.log(typeof nome2.toLowerCase);

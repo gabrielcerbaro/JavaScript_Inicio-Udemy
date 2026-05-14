@@ -1,9 +1,8 @@
-// Este script demonstra o método reverse() para inverter a ordem dos elementos de um array em JavaScript.
-// reverse() modifica o array original, alterando a sequência de elementos.
-// Aqui, invertemos um array de nomes e exibimos o resultado.
-// Como usar: Execute o script e compare o array original antes e depois do reverse.
-// Princípio: Cuidado com métodos mutáveis; eles alteram o array existente.
+// Este script demonstra o metodo reverse().
+// reverse() inverte a ordem dos itens do array original.
+// Diferente de slice(), ele modifica o proprio array.
 
 let nomes = ["Gabriel", "Cerbaro", "Gabriela", "Generoso", "Tica", "Amora"];
 
-console.log(nomes.reverse()); // Exibe o array invertido: ["Amora", "Tica", "Generoso", "Gabriela", "Cerbaro", "Gabriel"]
+// Exibe o array com a ordem invertida.
+console.log(nomes.reverse());

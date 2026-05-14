@@ -1,21 +1,24 @@
-// Este script demonstra os métodos push() e pop() para manipular arrays em JavaScript.
-// push() adiciona elementos no final do array, pop() remove o último elemento.
-// Aqui, removemos e adicionamos elementos, mostrando como arrays podem crescer e encolher.
-// Isso é útil para pilhas (LIFO - Last In, First Out).
-// Como usar: Execute o script e veja o array mudando no console.
-// Princípio: Arrays são estruturas dinâmicas que suportam operações eficientes no final.
+// Este script demonstra os metodos push() e pop().
+// push() adiciona um item no final do array.
+// pop() remove o ultimo item do array e retorna o item removido.
 
 let nomes = ["Gabriel", "Gabriela", "Cerbaro"];
 
-let nomeRemovido = nomes.pop(); // Remove e retorna o último elemento
+// Remove "Cerbaro", que era o ultimo item do array.
+let nomeRemovido = nomes.pop();
 
-console.log(nomeRemovido); // "Cerbaro"
-console.log(nomes); // ["Gabriel", "Gabriela"]
+// Exibe o item removido e depois o array atualizado.
+console.log(nomeRemovido);
+console.log(nomes);
 
-nomes.push("CerbaroN"); // Adiciona "CerbaroN" no final
+// Adiciona um novo item no final do array.
+nomes.push("CerbaroN");
 
-console.log(nomes); // ["Gabriel", "Gabriela", "CerbaroN"]
+// Exibe o array depois da inclusao.
+console.log(nomes);
 
-let nomeRemovido2 = nomes.pop(); // Remove novamente o último
+// Remove novamente o ultimo item do array.
+let nomeRemovido2 = nomes.pop();
 
-console.log(nomes); // ["Gabriel", "Gabriela"]
+// Exibe o array depois da segunda remocao.
+console.log(nomes);

@@ -1,18 +1,19 @@
-// Este script demonstra os métodos shift() e unshift() para manipular o início de arrays em JavaScript.
-// shift() remove o primeiro elemento, unshift() adiciona no início.
-// Aqui, removemos e adicionamos elementos no começo do array.
-// Isso é útil para filas (FIFO - First In, First Out), mas menos eficiente que push/pop.
-// Como usar: Execute o script e observe as mudanças no array.
-// Princípio: Operações no início de arrays são custosas devido ao deslocamento de elementos.
+// Este script demonstra os metodos shift() e unshift().
+// shift() remove o primeiro item do array.
+// unshift() adiciona um novo item no inicio do array.
 
 let carros = ["FIAT", "CHEV", "FORD", "VOLKS"];
 
-let carroRemovido = carros.shift(); // Remove e retorna o primeiro elemento
+// Remove "FIAT", que esta na primeira posicao.
+let carroRemovido = carros.shift();
 
-console.log(carroRemovido); // "FIAT"
-console.log(carros); // ["CHEV", "FORD", "VOLKS"]
+// Exibe o item removido e depois o array atualizado.
+console.log(carroRemovido);
+console.log(carros);
 
-carros.unshift("Mercedez"); // Adiciona "Mercedez" no início
+// Adiciona "Mercedez" no inicio do array.
+carros.unshift("Mercedez");
 
-console.log(carros); // ["Mercedez", "CHEV", "FORD", "VOLKS"]
-console.log(carros[0]); // "Mercedez"
+// Exibe o array atualizado e o primeiro item atual.
+console.log(carros);
+console.log(carros[0]);

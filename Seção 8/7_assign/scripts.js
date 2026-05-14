@@ -1,9 +1,5 @@
-// Este script demonstra o uso do método Object.assign() para mesclar objetos em JavaScript.
-// Object.assign() copia propriedades de um ou mais objetos fonte para um objeto alvo.
-// Aqui, estamos adicionando propriedades de 'adicionais' ao objeto 'carro'.
-// Isso é útil para combinar configurações ou adicionar funcionalidades sem modificar objetos originais.
-// Como usar: Execute o script e veja o console; o objeto 'carro' terá as propriedades extras após o assign.
-// Princípio: Imutabilidade - Object.assign cria uma cópia modificada, preservando o original.
+// Este script demonstra Object.assign().
+// Object.assign() copia propriedades de um objeto para outro.
 
 let carro = {
     portas: 4,
@@ -16,8 +12,12 @@ let adicionais = {
     vidroEletrico: true,
 }
 
-console.log(carro); // Exibe o objeto carro original
+// Exibe o objeto antes de receber as propriedades extras.
+console.log(carro);
 
-Object.assign(carro, adicionais); // Mescla as propriedades de 'adicionais' em 'carro'
+// Copia as propriedades de adicionais para dentro de carro.
+// Depois disso, carro passa a ter tetoSolar e vidroEletrico.
+Object.assign(carro, adicionais);
 
-console.log(carro); // Exibe o objeto carro após a mesclagem
+// Exibe o objeto carro depois da copia das propriedades.
+console.log(carro);

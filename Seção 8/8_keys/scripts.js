@@ -1,9 +1,5 @@
-// Este script demonstra o uso do método Object.keys() para obter as chaves de um objeto em JavaScript.
-// Object.keys() retorna um array com todas as chaves enumeráveis próprias do objeto.
-// Aqui, criamos objetos e exibimos suas chaves.
-// Isso é útil para iterar sobre propriedades de objetos ou verificar quais chaves existem.
-// Como usar: Execute o script e veja o console para os arrays de chaves.
-// Princípio: Reflexão - permite inspecionar a estrutura de objetos em tempo de execução.
+// Este script mostra como usar Object.keys().
+// Object.keys() retorna um array contendo os nomes das propriedades de um objeto.
 
 let obj = {
     'chave1': 1,
@@ -11,9 +7,11 @@ let obj = {
     'chave3': 3,
 }
 
-console.log(obj); // Exibe o objeto completo
+// Exibe o objeto completo.
+console.log(obj);
 
-console.log(Object.keys(obj)); // Exibe um array com as chaves: ['chave1', 'chave2', 'chave3']
+// Exibe apenas as chaves do objeto: chave1, chave2 e chave3.
+console.log(Object.keys(obj));
 
 let obj2 = {
     um: 1,
@@ -21,6 +19,8 @@ let obj2 = {
     tres: 3,
 }
 
-console.log(obj2); // Exibe o segundo objeto
+// Exibe o segundo objeto completo.
+console.log(obj2);
 
-console.log(Object.keys(obj2)); // Exibe as chaves: ['um', 'dois', 'tres']
+// Exibe apenas as chaves do segundo objeto: um, dois e tres.
+console.log(Object.keys(obj2));

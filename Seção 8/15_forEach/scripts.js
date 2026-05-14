@@ -1,12 +1,10 @@
-// Este script demonstra o método forEach() para iterar sobre arrays em JavaScript.
-// forEach() executa uma função para cada elemento do array.
-// Aqui, usamos uma arrow function para exibir cada nome.
-// Isso é uma alternativa moderna aos loops for tradicionais.
-// Como usar: Execute o script e veja cada nome sendo processado.
-// Princípio: Funcional - promove programação declarativa sobre imperativa.
+// Este script demonstra o metodo forEach().
+// forEach() executa uma funcao para cada item do array.
 
 let nomes = ["Gabriel", "Cerbaro", "Gabriela", "Generoso", "Tica", "Amora"];
 
+// Para cada nome dentro do array, a arrow function recebe o valor atual em "nome".
 nomes.forEach(nome => {
-    console.log("O nome é " + nome); // Executa para cada elemento
+    // Exibe uma frase usando o nome atual do loop.
+    console.log("O nome e " + nome);
 });

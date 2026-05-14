@@ -1,10 +1,5 @@
-// Este script demonstra como adicionar e remover propriedades de objetos em JavaScript.
-// Objetos são estruturas de dados mutáveis que permitem modificar suas propriedades dinamicamente.
-// Aqui, criamos um objeto 'pessoa', acessamos uma propriedade existente, removemos uma propriedade usando 'delete',
-// e adicionamos uma nova propriedade.
-// Isso ilustra a flexibilidade dos objetos para representar dados que podem mudar.
-// Como usar: Abra o arquivo index.html no navegador, abra o console do desenvolvedor (F12) e veja as saídas.
-// Princípio: Objetos permitem modelar entidades com dados variáveis.
+// Este script mostra como adicionar e remover propriedades de um objeto.
+// Objetos podem ser alterados depois de criados.
 
 let pessoa = {
     nome: "Gabriel",
@@ -12,12 +7,17 @@ let pessoa = {
     altura: 1.86,
 }
 
-console.log(pessoa.nome); // Acessa e exibe a propriedade 'nome'
+// Exibe o valor da propriedade nome.
+console.log(pessoa.nome);
 
-delete pessoa.altura; // Remove a propriedade 'altura' do objeto
+// Remove a propriedade altura do objeto pessoa.
+delete pessoa.altura;
 
-console.log(pessoa.altura); // Tenta acessar 'altura', que agora é undefined
+// Como altura foi removida, o resultado sera undefined.
+console.log(pessoa.altura);
 
-pessoa.casado = true; // Adiciona uma nova propriedade 'casado' ao objeto
+// Cria uma nova propriedade chamada casado e guarda true nela.
+pessoa.casado = true;
 
-console.log(pessoa); // Exibe o objeto completo após as modificações
+// Exibe o objeto atualizado, agora sem altura e com casado.
+console.log(pessoa);

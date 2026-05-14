@@ -1,30 +1,22 @@
-// Este script cria e utiliza um objeto em JavaScript.
-// Objetos são estruturas que agrupam propriedades (dados) e métodos (funções).
-// Aqui, modelamos um cachorro com propriedades e um método.
+// Este script mostra como criar e usar um objeto em JavaScript.
+// Objetos agrupam dados em pares de chave e valor.
 
-// Declarando um objeto
 let cachorro = {
-    patas: 4, // Propriedade: armazena o número de patas
-    nome: "Thor", // Propriedade: armazena o nome
-    latir: function() { // Método: função que executa uma ação
+    // Propriedade que guarda a quantidade de patas.
+    patas: 4,
+
+    // Propriedade que guarda o nome do cachorro.
+    nome: "Thor",
+
+    // Metodo do objeto: uma funcao guardada dentro do objeto.
+    latir: function() {
         console.log("Au Au");
     }
 };
-// Objetos são definidos com chaves {}.
-// Dica: Use objetos para representar entidades do mundo real.
-// Princípio: Encapsulação - dados e comportamentos juntos.
 
-console.log(cachorro.patas); // Acessando propriedade
-// Dica: Use notação de ponto para acessar propriedades.
+// Acessa propriedades usando a notacao de ponto.
+console.log(cachorro.patas);
+console.log(cachorro.nome);
 
-console.log(cachorro.nome); // Outra propriedade
-// Dica: Propriedades podem ser de qualquer tipo: string, number, etc.
-
-cachorro.latir(); // Chamando o método
-// Dica: Métodos são chamados com parênteses. Eles executam código.
-// Princípio: Abstração - esconda detalhes internos, exponha apenas o necessário.
-
-// Comparação:
-// - Array: [] - coleção ordenada de valores.
-// - Objeto: {} - coleção de pares chave-valor.
-// Dica: Use objetos quando precisar de dados nomeados, arrays para listas.
+// Executa o metodo latir do objeto cachorro.
+cachorro.latir();

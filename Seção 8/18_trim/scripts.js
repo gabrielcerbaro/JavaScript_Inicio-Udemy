@@ -1,13 +1,14 @@
-// Este script demonstra o método trim() para remover espaços em branco do início e do fim de uma string.
-// trim() retorna uma nova string sem modificar a original.
-// Aqui, usamos uma string com espaços e quebras de linha para mostrar a limpeza de texto.
-// Como usar: Execute o script e veja a diferença entre a string original e a string corrigida.
-// Princípio: Normalização de entrada ajuda a evitar erros em processamento de texto.
+// Este script demonstra o metodo trim().
+// trim() remove espacos em branco do inicio e do fim de uma string.
+// Ele tambem remove quebras de linha nas extremidades.
 
 let nome = "  \n Gabriel \n   ";
 
-console.log(nome); // Exibe a string com espaços extras e quebras de linha
+// Exibe a string original, ainda com espacos e quebras de linha.
+console.log(nome);
 
-let nomeCorrigido = nome.trim(); // Remove espaços do começo e do fim
+// Cria uma nova string sem os espacos extras nas pontas.
+let nomeCorrigido = nome.trim();
 
-console.log(nomeCorrigido); // Exibe "Gabriel" sem espaços extras
+// Exibe apenas "Gabriel", sem os espacos externos.
+console.log(nomeCorrigido);
