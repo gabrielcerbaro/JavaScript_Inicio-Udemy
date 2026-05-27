@@ -35,6 +35,11 @@ class ContaBancaria {
             console.log("Esse é o saldo da conta corrente: " + this.contaCorrente);
         }
     }
+
+    jurosAniversario() {
+        let juros = (this.contaPoupanca * this.juros) / 100;
+        this.contaPoupanca += juros;
+    }
 }
 
 class ContaEspecial extends ContaBancaria {
@@ -48,13 +53,29 @@ let pessoa1 = new ContaBancaria (3000, 10000, 3);
 let pessoa2 = new ContaEspecial (3000, 10000, 3);
 
 pessoa1.deposito(500);
+
 pessoa1.saque(100);
+
 pessoa1.saque(99999); 
+
 pessoa1.transferencia(1000);
+
 pessoa1.consultarSaldo("poupança");
+
 pessoa1.consultarSaldo("corrente");
+
 pessoa2.consultarSaldo("poupança");
+
 pessoa2.consultarSaldo("corrente");
 
 console.log(pessoa1.juros); 
+
 console.log(pessoa2.juros); 
+
+pessoa1.jurosAniversario();
+
+console.log(pessoa1);
+
+pessoa2.jurosAniversario();
+
+console.log(pessoa2);
