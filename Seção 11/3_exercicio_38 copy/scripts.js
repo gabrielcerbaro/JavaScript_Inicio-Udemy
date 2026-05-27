@@ -1,35 +1,51 @@
 class Carro {
-    constructor(marca, cor, gasolinaRestante) {
+    constructor(marca, cor, gasolinaRestante, consumo) {
         this.marca = marca;
         this.cor = cor;
         this.gasolinaRestante = gasolinaRestante;
+        this.consumo = consumo;
     }
 
-    dirigir(gasolinaUsar){
+    dirigir(km){
 
-       for (let i = this.gasolinaRestante; i >= this.gasolinaRestante - gasolinaUsar; i--) 
-        console.log(i);
+        let kmConsumo = km / this.consumo;
 
-       this.gasolinaRestante = this.gasolinaRestante - gasolinaUsar
-       
-       console.log("Essa é a gasolina restante " + this.gasolinaRestante);
+        if(kmConsumo > this.gasolinaRestante) {
+            console.log("Gasolina insuficiente");
+            return;
+        }
+            this.gasolinaRestante -= kmConsumo;
+            console.log("Essa é a gasolina restante: " + this.gasolinaRestante)
     }
 
     abastecer(gasolinaAbastecer) {
+        
+        if(gasolinaAbastecer === "completar") {
+            this.gasolinaRestante = 100;
+            console.log("Tanque completo: " + this.gasolinaRestante)
+            return;
+        }
+
         let abastecimento = this.gasolinaRestante + gasolinaAbastecer;
 
         if(abastecimento > 100) {
             console.log("Derramou gasolina")
-        } else {
-            console.log("Carro abastecido: " + abastecimento);
+            return;
         }
 
          this.gasolinaRestante = gasolinaAbastecer + this.gasolinaRestante;
+         console.log("Carro abastecido: " + this.gasolinaRestante);
     }
 }
 
-let carro = new Carro ("Sentra", "Branco", 100);
+let carro = new Carro ("Sentra", "Branco", 100, 12);
 
-carro.dirigir(30);
+carro.dirigir(100);
 
-carro.abastecer(29)
+carro.abastecer("completar")
+
+carro.dirigir(10000)
+
+carro.dirigir(100)
+
+carro.abastecer(5)
