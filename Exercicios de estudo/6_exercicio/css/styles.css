@@ -1,0 +1,18 @@
+body {
+    background-color: bisque;
+}
+
+#area { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
